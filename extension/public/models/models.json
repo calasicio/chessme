@@ -1,0 +1,30 @@
+{
+  "rapid": {
+    "file": "maia2-rapid.onnx",
+    "opset": 17,
+    "inputs": {
+      "boards": "float32[batch,18,8,8]",
+      "elo_self": "int64[batch]",
+      "elo_oppo": "int64[batch]"
+    },
+    "outputs": {
+      "logits_maia": "float32[batch,1880] (policy logits, needs legal-move mask + softmax)",
+      "logits_side_info": "float32[batch,2021] (auxiliary training signal: 6+6+1 piece/capture/check one-hots + 64+64 from/to-square one-hots + 1880 legal-move mask; unused at inference)",
+      "logits_value": "float32[batch] (raw value; winProbWhite = clamp(v/2+0.5, 0, 1))"
+    }
+  },
+  "blitz": {
+    "file": "maia2-blitz.onnx",
+    "opset": 17,
+    "inputs": {
+      "boards": "float32[batch,18,8,8]",
+      "elo_self": "int64[batch]",
+      "elo_oppo": "int64[batch]"
+    },
+    "outputs": {
+      "logits_maia": "float32[batch,1880] (policy logits, needs legal-move mask + softmax)",
+      "logits_side_info": "float32[batch,2021] (auxiliary training signal: 6+6+1 piece/capture/check one-hots + 64+64 from/to-square one-hots + 1880 legal-move mask; unused at inference)",
+      "logits_value": "float32[batch] (raw value; winProbWhite = clamp(v/2+0.5, 0, 1))"
+    }
+  }
+}

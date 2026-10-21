@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+defaults:
+  run:
+    working-directory: extension
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache Git LFS objects
+        uses: actions/cache@v4
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('extension/public/models/*.onnx', 'extension/public/ort/*.wasm') }}
+
+      - name: Pull LFS files
+        run: git lfs pull
+        working-directory: .
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: extension/package-lock.json
+
+      - run: npm ci
+      - run: npm run compile
+      - run: npm run lint
+      - run: npm run format:check
+      - run: npm run test
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache Git LFS objects
+        uses: actions/cache@v4
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('extension/public/models/*.onnx', 'extension/public/ort/*.wasm') }}
+
+      - name: Pull LFS files
+        run: git lfs pull
+        working-directory: .
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: extension/package-lock.json
+
+      - run: npm ci
+      - run: npm run build
+      - run: npm run build:firefox
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chessme-chrome
+          path: extension/.output/chrome-mv3
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: chessme-firefox
+          path: extension/.output/firefox-mv3

@@ -1,0 +1,13 @@
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+extension/.wxt/
+extension/.output/
+extension/*.zip
+
+maia2_models/
+
+*.log
+.DS_Store

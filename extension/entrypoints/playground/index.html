@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chessme</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="app">
+      <h1>Chessme</h1>
+      <p class="subtitle">
+        What would a human at a given rating actually play here? Not an engine &mdash; a model of
+        human move choice.
+      </p>
+
+      <form id="position-form">
+        <label>
+          FEN
+          <input
+            id="fen"
+            type="text"
+            value="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </label>
+
+        <div class="row">
+          <label>
+            Variant
+            <select id="variant">
+              <option value="rapid">Rapid</option>
+              <option value="blitz">Blitz</option>
+            </select>
+          </label>
+          <label>
+            My Elo
+            <input id="elo-self" type="number" value="1500" min="400" max="3000" step="10" />
+          </label>
+          <label>
+            Opponent Elo
+            <input id="elo-oppo" type="number" value="1500" min="400" max="3000" step="10" />
+          </label>
+        </div>
+
+        <button id="evaluate" type="submit">Evaluate</button>
+        <span id="status"></span>
+      </form>
+
+      <section id="result" hidden>
+        <div class="win-bar">
+          <div class="win-bar-fill" id="win-bar-fill"></div>
+          <span id="win-bar-label"></span>
+        </div>
+
+        <table id="moves-table">
+          <thead>
+            <tr>
+              <th>Move</th>
+              <th>Probability</th>
+            </tr>
+          </thead>
+          <tbody id="moves-body"></tbody>
+        </table>
+      </section>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

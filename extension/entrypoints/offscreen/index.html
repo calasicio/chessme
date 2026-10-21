@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chessme Offscreen Inference</title>
+  </head>
+  <body>
+    <!-- Chrome-only: a DOM-capable host for onnxruntime-web, since Chrome's
+         MV3 service worker can't be trusted to run its WASM backend
+         reliably. Never shown to the user. -->
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

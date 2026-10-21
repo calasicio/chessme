@@ -1,0 +1,564 @@
+<!doctype html>
+<html>
+  <body>
+    <div id="board-layout-main" class="board-layout-main">
+      <div id="board-layout-player-top" class="board-layout-player board-layout-top">
+        <div id="player-top" data-v-app="">
+          <div class="player-row-component player-row-top" is-minimal-avatar="" is-new-board="">
+            <div class="player-row-container">
+              <div class="player-row-wrapper">
+                <div
+                  class="cc-avatar-component cc-avatar-size-40 player-row-avatar player-row-with-avatar-background"
+                >
+                  <img
+                    class="cc-avatar-img"
+                    loading="lazy"
+                    src="https://images.chesscomfiles.com/uploads/v1/user/66746160.463fee68.384x384o.365dfb49e43d.png"
+                    srcset="
+                      https://images.chesscomfiles.com/uploads/v1/user/66746160.463fee68.384x384o.365dfb49e43d.png    1x,
+                      https://images.chesscomfiles.com/uploads/v1/user/66746160.463fee68.384x384o.365dfb49e43d@2x.png 2x
+                    "
+                    alt="Avatar"
+                    height="40"
+                    width="40"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <div class="cc-user-block-component cc-user-block-white cc-user-block-small">
+                      <!---->
+                      <!---->
+                      <div
+                        class="cc-text-medium-bold cc-user-username-component cc-user-username-white"
+                        data-test-element="user-tagline-username"
+                      >
+                        Martin
+                      </div>
+                      <div class="cc-text-medium cc-user-rating-white">(250)</div>
+                      <div class="cc-country-flag-component country-bg cc-country-flag-small">
+                        <!---->
+                      </div>
+                      <!---->
+                    </div>
+                  </div>
+                  <div class="captured-pieces player-row-pieces">
+                    <span class="captured-pieces-cpiece captured-pieces-w-4-pawns"></span
+                    ><span class="captured-pieces-cpiece captured-pieces-w-2-bishops"></span
+                    ><span class="captured-pieces-cpiece captured-pieces-w-2-knights"></span
+                    ><span class="captured-pieces-cpiece captured-pieces-w-rook"></span
+                    ><span class="captured-pieces-cpiece captured-pieces-w-queen"></span>
+                    <!---->
+                    <!---->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+          </div>
+        </div>
+      </div>
+      <div id="board-layout-chessboard" class="board-layout-chessboard board-board">
+        <div id="board-layout-evaluation" class="board-layout-evaluation">
+          <div id="evaluation"></div>
+        </div>
+        <div id="board-layout-pieces" class="board-layout-pieces"></div>
+
+        <wc-chess-board
+          class="board"
+          id="board-play-computer"
+          style="--move-animation-duration: 180ms"
+          ><svg viewBox="0 0 100 100" class="coordinates outside" aria-hidden="true">
+            <text x="2" y="3.5" font-size="3.1" class="coordinate-grey">8</text>
+            <text x="2" y="16" font-size="3.1" class="coordinate-grey">7</text>
+            <text x="2" y="28.5" font-size="3.1" class="coordinate-grey">6</text>
+            <text x="2" y="41" font-size="3.1" class="coordinate-grey">5</text>
+            <text x="2" y="53.5" font-size="3.1" class="coordinate-grey">4</text>
+            <text x="2" y="66" font-size="3.1" class="coordinate-grey">3</text>
+            <text x="2" y="78.5" font-size="3.1" class="coordinate-grey">2</text>
+            <text x="2" y="91" font-size="3.1" class="coordinate-grey">1</text>
+            <text x="10.35" y="99.25" font-size="3.1" class="coordinate-grey">a</text>
+            <text x="22.85" y="99.25" font-size="3.1" class="coordinate-grey">b</text>
+            <text x="35.35" y="99.25" font-size="3.1" class="coordinate-grey">c</text>
+            <text x="47.85" y="99.25" font-size="3.1" class="coordinate-grey">d</text>
+            <text x="60.35" y="99.25" font-size="3.1" class="coordinate-grey">e</text>
+            <text x="72.85" y="99.25" font-size="3.1" class="coordinate-grey">f</text>
+            <text x="85.35" y="99.25" font-size="3.1" class="coordinate-grey">g</text>
+            <text x="97.85" y="99.25" font-size="3.1" class="coordinate-grey">h</text></svg
+          ><!--/Coordinates-->
+          <div class="element-pool" style="" data-test-element="" data-test-type=""></div>
+          <div
+            class="highlight square-24"
+            style="background-color: rgb(255, 255, 51); opacity: 0.5"
+            data-test-element="highlight"
+            data-test-type="highlight"
+          ></div>
+          <div
+            class="highlight square-38"
+            style="background-color: rgb(235, 97, 80); opacity: 0.8"
+            data-test-element="highlight"
+            data-test-type="highlight"
+          ></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+          <div
+            class="highlight square-41"
+            data-test-element="highlight"
+            data-test-type="highlight"
+            style="background-color: rgb(82, 176, 220); opacity: 0.8"
+          ></div>
+          <div
+            class="highlight square-31"
+            data-test-element="highlight"
+            data-test-type="highlight"
+            style="background-color: rgb(235, 97, 80); opacity: 0.8"
+          ></div>
+          <div
+            class="highlight square-21"
+            data-test-element="highlight"
+            data-test-type="highlight"
+            style="background-color: rgb(255, 170, 0); opacity: 0.8"
+          ></div>
+          <div
+            class="highlight square-15"
+            data-test-element="highlight"
+            data-test-type="highlight"
+            style="background-color: rgb(255, 255, 51); opacity: 0.5"
+          ></div>
+          <div
+            class="highlight square-11"
+            data-test-element="highlight"
+            data-test-type="highlight"
+            style="background-color: rgb(172, 206, 89); opacity: 0.8"
+          ></div>
+          <!--/Squares--><!--/Blinking Highlights--><!--/Effects-->
+          <div class="hover-square square-34" style="visibility: hidden">
+            <svg viewBox="0 0 100 100">
+              <rect
+                x="0"
+                y="0"
+                width="100"
+                height="100"
+                stroke="rgba(255, 255, 255, 0.65)"
+                stroke-width="10"
+                fill="none"
+              ></rect>
+            </svg>
+          </div>
+          <!--/Hover Square--><!--/Effects--><!--/VFX Below-->
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="piece wk square-61" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="piece bp square-84" style=""></div>
+          <div class="piece wp square-54" style=""></div>
+          <div class="piece bp square-55" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="piece bk square-24" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="piece wp square-83" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="piece wp square-34" style=""></div>
+          <div class="piece wp square-14" style=""></div>
+          <div class="piece bp square-76" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="element-pool" style=""></div>
+          <div class="piece wr square-11" style=""></div>
+          <!--/Pieces--><!--/Custom Items--><!--/VFX Above--><!--/Move Hints--><!--/Capture Hints--><svg
+            viewBox="0 0 100 100"
+            class="arrows"
+          >
+            <polygon
+              id="arrow-d4c5"
+              data-arrow="d4c5"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(135 43.75 56.25)"
+              points="42.375 60.75, 42.375 69.42766952966369, 40.5 69.42766952966369, 43.75 73.92766952966369, 47 69.42766952966369, 45.125 69.42766952966369, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4d5"
+              data-arrow="d4d5"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(180 43.75 56.25)"
+              points="42.375 60.75, 42.375 64.25, 40.5 64.25, 43.75 68.75, 47 64.25, 45.125 64.25, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4e5"
+              data-arrow="d4e5"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(225 43.75 56.25)"
+              points="42.375 60.75, 42.375 69.42766952966369, 40.5 69.42766952966369, 43.75 73.92766952966369, 47 69.42766952966369, 45.125 69.42766952966369, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4e4"
+              data-arrow="d4e4"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(270 43.75 56.25)"
+              points="42.375 60.75, 42.375 64.25, 40.5 64.25, 43.75 68.75, 47 64.25, 45.125 64.25, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4e3"
+              data-arrow="d4e3"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(315 43.75 56.25)"
+              points="42.375 60.75, 42.375 69.42766952966369, 40.5 69.42766952966369, 43.75 73.92766952966369, 47 69.42766952966369, 45.125 69.42766952966369, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4d3"
+              data-arrow="d4d3"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(0 43.75 56.25)"
+              points="42.375 60.75, 42.375 64.25, 40.5 64.25, 43.75 68.75, 47 64.25, 45.125 64.25, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4c4"
+              data-arrow="d4c4"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(90 43.75 56.25)"
+              points="42.375 60.75, 42.375 64.25, 40.5 64.25, 43.75 68.75, 47 64.25, 45.125 64.25, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4c3"
+              data-arrow="d4c3"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(45 43.75 56.25)"
+              points="42.375 60.75, 42.375 69.42766952966369, 40.5 69.42766952966369, 43.75 73.92766952966369, 47 69.42766952966369, 45.125 69.42766952966369, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4b4"
+              data-arrow="d4b4"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(90 43.75 56.25)"
+              points="42.375 60.75, 42.375 76.75, 40.5 76.75, 43.75 81.25, 47 76.75, 45.125 76.75, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4b5"
+              data-arrow="d4b5"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(90 43.75 56.25) scale(-1, 1) translate(-87.5, 0)"
+              points="42.375 60.75, 42.375 82.625, 51.75 82.625, 51.75 84.5, 56.25 81.25, 51.75 78, 51.75 79.875, 45.125 79.875, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4c6"
+              data-arrow="d4c6"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(180 43.75 56.25)"
+              points="42.375 60.75, 42.375 82.625, 51.75 82.625, 51.75 84.5, 56.25 81.25, 51.75 78, 51.75 79.875, 45.125 79.875, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4d6"
+              data-arrow="d4d6"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(180 43.75 56.25)"
+              points="42.375 60.75, 42.375 76.75, 40.5 76.75, 43.75 81.25, 47 76.75, 45.125 76.75, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4e6"
+              data-arrow="d4e6"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(180 43.75 56.25) scale(-1, 1) translate(-87.5, 0)"
+              points="42.375 60.75, 42.375 82.625, 51.75 82.625, 51.75 84.5, 56.25 81.25, 51.75 78, 51.75 79.875, 45.125 79.875, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4f5"
+              data-arrow="d4f5"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(270 43.75 56.25)"
+              points="42.375 60.75, 42.375 82.625, 51.75 82.625, 51.75 84.5, 56.25 81.25, 51.75 78, 51.75 79.875, 45.125 79.875, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-c4f4"
+              data-arrow="c4f4"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(270 31.25 56.25)"
+              points="29.875 60.75, 29.875 89.25, 28 89.25, 31.25 93.75, 34.5 89.25, 32.625 89.25, 32.625 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4f3"
+              data-arrow="d4f3"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(270 43.75 56.25) scale(-1, 1) translate(-87.5, 0)"
+              points="42.375 60.75, 42.375 82.625, 51.75 82.625, 51.75 84.5, 56.25 81.25, 51.75 78, 51.75 79.875, 45.125 79.875, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4e2"
+              data-arrow="d4e2"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(0 43.75 56.25)"
+              points="42.375 60.75, 42.375 82.625, 51.75 82.625, 51.75 84.5, 56.25 81.25, 51.75 78, 51.75 79.875, 45.125 79.875, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4d2"
+              data-arrow="d4d2"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(0 43.75 56.25)"
+              points="42.375 60.75, 42.375 76.75, 40.5 76.75, 43.75 81.25, 47 76.75, 45.125 76.75, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4c2"
+              data-arrow="d4c2"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(0 43.75 56.25) scale(-1, 1) translate(-87.5, 0)"
+              points="42.375 60.75, 42.375 82.625, 51.75 82.625, 51.75 84.5, 56.25 81.25, 51.75 78, 51.75 79.875, 45.125 79.875, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4b3"
+              data-arrow="d4b3"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(90 43.75 56.25)"
+              points="42.375 60.75, 42.375 82.625, 51.75 82.625, 51.75 84.5, 56.25 81.25, 51.75 78, 51.75 79.875, 45.125 79.875, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4b6"
+              data-arrow="d4b6"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(135 43.75 56.25)"
+              points="42.375 60.75, 42.375 87.10533905932738, 40.5 87.10533905932738, 43.75 91.60533905932738, 47 87.10533905932738, 45.125 87.10533905932738, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4c7"
+              data-arrow="d4c7"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(161.56 43.75 56.25)"
+              points="42.375 60.75, 42.375 91.27847075210474, 40.5 91.27847075210474, 43.75 95.77847075210474, 47 91.27847075210474, 45.125 91.27847075210474, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4d7"
+              data-arrow="d4d7"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(180 43.75 56.25)"
+              points="42.375 60.75, 42.375 89.25, 40.5 89.25, 43.75 93.75, 47 89.25, 45.125 89.25, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4e7"
+              data-arrow="d4e7"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(198.44 43.75 56.25)"
+              points="42.375 60.75, 42.375 91.27847075210474, 40.5 91.27847075210474, 43.75 95.77847075210474, 47 91.27847075210474, 45.125 91.27847075210474, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4f6"
+              data-arrow="d4f6"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(225 43.75 56.25)"
+              points="42.375 60.75, 42.375 87.10533905932738, 40.5 87.10533905932738, 43.75 91.60533905932738, 47 87.10533905932738, 45.125 87.10533905932738, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4g5"
+              data-arrow="d4g5"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(251.57 43.75 56.25)"
+              points="42.375 60.75, 42.375 91.27847075210474, 40.5 91.27847075210474, 43.75 95.77847075210474, 47 91.27847075210474, 45.125 91.27847075210474, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4g4"
+              data-arrow="d4g4"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(270 43.75 56.25)"
+              points="42.375 60.75, 42.375 89.25, 40.5 89.25, 43.75 93.75, 47 89.25, 45.125 89.25, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4g3"
+              data-arrow="d4g3"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(288.44 43.75 56.25)"
+              points="42.375 60.75, 42.375 91.27847075210474, 40.5 91.27847075210474, 43.75 95.77847075210474, 47 91.27847075210474, 45.125 91.27847075210474, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4f2"
+              data-arrow="d4f2"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(315 43.75 56.25)"
+              points="42.375 60.75, 42.375 87.10533905932738, 40.5 87.10533905932738, 43.75 91.60533905932738, 47 87.10533905932738, 45.125 87.10533905932738, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4e1"
+              data-arrow="d4e1"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(341.57 43.75 56.25)"
+              points="42.375 60.75, 42.375 91.27847075210474, 40.5 91.27847075210474, 43.75 95.77847075210474, 47 91.27847075210474, 45.125 91.27847075210474, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4d1"
+              data-arrow="d4d1"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(0 43.75 56.25)"
+              points="42.375 60.75, 42.375 89.25, 40.5 89.25, 43.75 93.75, 47 89.25, 45.125 89.25, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4c1"
+              data-arrow="d4c1"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(18.43 43.75 56.25)"
+              points="42.375 60.75, 42.375 91.27847075210474, 40.5 91.27847075210474, 43.75 95.77847075210474, 47 91.27847075210474, 45.125 91.27847075210474, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4b2"
+              data-arrow="d4b2"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(45 43.75 56.25)"
+              points="42.375 60.75, 42.375 87.10533905932738, 40.5 87.10533905932738, 43.75 91.60533905932738, 47 87.10533905932738, 45.125 87.10533905932738, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4a3"
+              data-arrow="d4a3"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(71.56 43.75 56.25)"
+              points="42.375 60.75, 42.375 91.27847075210474, 40.5 91.27847075210474, 43.75 95.77847075210474, 47 91.27847075210474, 45.125 91.27847075210474, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-d4a5"
+              data-arrow="d4a5"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(108.43 43.75 56.25)"
+              points="42.375 60.75, 42.375 91.27847075210474, 40.5 91.27847075210474, 43.75 95.77847075210474, 47 91.27847075210474, 45.125 91.27847075210474, 45.125 60.75"
+            ></polygon>
+            <polygon
+              id="arrow-e8g8"
+              data-arrow="e8g8"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(270 56.25 6.25)"
+              points="54.875 10.75, 54.875 26.75, 53 26.75, 56.25 31.25, 59.5 26.75, 57.625 26.75, 57.625 10.75"
+            ></polygon>
+            <polygon
+              id="arrow-e8c8"
+              data-arrow="e8c8"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(90 56.25 6.25)"
+              points="54.875 10.75, 54.875 26.75, 53 26.75, 56.25 31.25, 59.5 26.75, 57.625 26.75, 57.625 10.75"
+            ></polygon>
+            <polygon
+              id="arrow-h8h7"
+              data-arrow="h8h7"
+              class="arrow"
+              style="fill: rgba(255, 170, 0, 0.8); opacity: 0.8"
+              transform="rotate(0 93.75 6.25)"
+              points="92.375 10.75, 92.375 14.25, 90.5 14.25, 93.75 18.75, 97 14.25, 95.125 14.25, 95.125 10.75"
+            ></polygon></svg
+          ><!--/Arrows-->
+          <div class="promotion-window top" style="transform: translateX(200%); display: none">
+            <i class="close-button icon-font-chess x"></i>
+            <div class="promotion-piece wb"></div>
+            <div class="promotion-piece wn"></div>
+            <div class="promotion-piece wq"></div>
+            <div class="promotion-piece wr"></div>
+          </div>
+          <!--/Promotion Window--><!--/Fade Setup--></wc-chess-board
+        >
+      </div>
+      <div id="board-layout-player-bottom" class="board-layout-player board-layout-bottom">
+        <div id="player-bottom" data-v-app="">
+          <div class="player-row-component" is-minimal-avatar="" is-new-board="">
+            <div class="player-row-container">
+              <div class="player-row-wrapper">
+                <div
+                  class="cc-avatar-component cc-avatar-size-40 player-row-avatar player-row-with-avatar-background"
+                >
+                  <img
+                    class="cc-avatar-img"
+                    loading="lazy"
+                    src="https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif"
+                    srcset="
+                      https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif    1x,
+                      https://www.chess.com/bundles/web/images/noavatar_l.84a92436@2x.gif 2x
+                    "
+                    alt="Avatar"
+                    height="40"
+                    width="40"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <div class="cc-user-block-component cc-user-block-white cc-user-block-small">
+                      <!---->
+                      <!---->
+                      <div
+                        class="cc-text-medium-bold cc-user-username-component cc-user-username-white"
+                        data-test-element="user-tagline-username"
+                      >
+                        JscioChess
+                      </div>
+                      <!---->
+                      <div class="cc-country-flag-component country-70 cc-country-flag-small">
+                        <!---->
+                      </div>
+                      <!---->
+                    </div>
+                  </div>
+                  <div class="captured-pieces player-row-pieces">
+                    <span class="captured-pieces-cpiece captured-pieces-b-5-pawns"></span
+                    ><span class="captured-pieces-cpiece captured-pieces-b-2-bishops"></span
+                    ><span class="captured-pieces-cpiece captured-pieces-b-2-knights"></span
+                    ><span class="captured-pieces-cpiece captured-pieces-b-2-rooks"></span
+                    ><span class="captured-pieces-cpiece captured-pieces-b-queen"></span>
+                    <span class="captured-pieces-cpiece captured-pieces-score">+6</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

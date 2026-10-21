@@ -1,0 +1,523 @@
+<!doctype html>
+<html>
+  <body>
+    <div id="board-layout-sidebar" class="board-layout-sidebar" data-v-app="">
+      <div class="sidebar-controller-container">
+        <div class="cc-sidebar-header-component cc-sidebar-header-secondary">
+          <!---->
+          <div class="cc-sidebar-header-header-center">
+            <img
+              data-cy="cc-icon"
+              alt="device-bot"
+              aria-hidden="true"
+              class="cc-icon-img_d8b7587 cc-icon-size-24_d8b7587 cc-sidebar-header-feature-icon"
+              height="24"
+              src="https://assets-ds.chess.com/color-icons/device-bot.svg"
+              width="24"
+            />
+            <h1 class="cc-sidebar-header-title cc-sidebar-header-secondary">Play Bots</h1>
+          </div>
+          <!---->
+          <!---->
+        </div>
+        <div class="play-controller-component sidebar-controller-component">
+          <div
+            class="bot-speech-multiple-messages-component bot-speech-multiple-messages-withPadding play-controller-messages"
+          >
+            <div class="bot-speech-avatar-and-wrapper-component" style="--bot-size: 96">
+              <div class="bot-speech-avatar-and-wrapper-avatarAndWrapper">
+                <div
+                  class="bot-speech-avatar-and-wrapper-bot bot-speech-avatar-and-wrapper-docked bot-speech-avatar-and-wrapper-sticky"
+                >
+                  <!---->
+                  <img
+                    alt=""
+                    class="bot-speech-avatar-and-wrapper-botImage"
+                    height="96"
+                    width="96"
+                    src="https://images.chesscomfiles.com/uploads/v1/user/66746160.463fee68.384x384o.365dfb49e43d.png"
+                  />
+                  <!---->
+                </div>
+                <div class="transition-group-bots-message-container" style="margin-top: 32px"></div>
+              </div>
+              <!---->
+            </div>
+          </div>
+          <div class="play-controller-moves-container">
+            <div class="">
+              <!---->
+              <!---->
+            </div>
+            <wc-eco-opening
+              board-id="board-play-computer"
+              link-to-explorer=""
+              explorer-is-clickable=""
+              opening-is-clickable=""
+              class="eco-opening-panel"
+            >
+              <span class="eco-opening-name">Four Knights Game: Spanish Variation</span>
+              <div class="eco-opening-links">
+                <a
+                  class="eco-opening-opening"
+                  title="Openings"
+                  href="/openings/Four-Knights-Game-Spanish-Variation-4...a6"
+                  target="_blank"
+                  ><span class="icon-font-chess chess-book eco-opening-icon" data-v-app=""
+                    ><!----></span
+                  ></a
+                >
+                <a
+                  class="eco-opening-explorer"
+                  title="Explorer"
+                  href="/analysis/explorer?color=white&amp;gameSource=master&amp;moveList=e4+e5+Nf3+Nc6+Nc3+Nf6+Bb5+a6+O-O+Be7+Qe2+a5+Qe3+Rf8+d3+g6+b3+Nd5+Ba3+Nxe3+fxe3+Rg8+Bxe7+Qxe7+Nxe5+Qd6+Nxc6+dxc6+Bxc6++Qd7+e5+Ra6+d4+Rxc6+d5+Qg4+dxc6+Qxg2++Kxg2+Kd8+cxb7+Bxb7++e4+Ba6+Rfd1++Ke7+Nd5++Kd8+Nxc7++Kxc7+Rd6+h5+Rxa6+h4+h3+Rd8+Rxa5+Rd2++Kh1+f6+Ra4+fxe5+Rc4++Kb6+a4+Rxc2+Kg1+Rxc4+Kf1+Ka5+bxc4+Kb4&amp;ne=1&amp;ply=72"
+                  target="_blank"
+                  ><span class="icon-font-chess circle-compass eco-opening-icon" data-v-app=""
+                    ><!----></span
+                  ></a
+                >
+              </div>
+            </wc-eco-opening>
+            <div class="play-controller-scrollable" id="scroll-container">
+              <wc-simple-move-list
+                scroll-container-id="scroll-container"
+                class="play-controller-moveList move-list chessboard-pkg-move-list-component"
+                board-id="board-play-computer"
+                ><div style="--timeMaxValue: 0; --timestampWidth: 0px">
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="1">
+                    1.
+                    <div data-node="0-0" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">e4 </span>
+                    </div>
+                    <div data-node="0-1" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">e5 </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="2">
+                    2.
+                    <div data-node="0-2" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-white" data-figurine="N"></span> f3
+                      </span>
+                    </div>
+                    <div data-node="0-3" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-black" data-figurine="N"></span> c6
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="3">
+                    3.
+                    <div data-node="0-4" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-white" data-figurine="N"></span> c3
+                      </span>
+                    </div>
+                    <div data-node="0-5" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-black" data-figurine="N"></span> f6
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="4">
+                    4.
+                    <div data-node="0-6" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess bishop-white" data-figurine="B"></span> b5
+                      </span>
+                    </div>
+                    <div data-node="0-7" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">a6 </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="5">
+                    5.
+                    <div data-node="0-8" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">O-O </span>
+                    </div>
+                    <div data-node="0-9" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess bishop-black" data-figurine="B"></span> e7
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="6">
+                    6.
+                    <div data-node="0-10" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess queen-white" data-figurine="Q"></span> e2
+                      </span>
+                    </div>
+                    <div data-node="0-11" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">a5 </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="7">
+                    7.
+                    <div data-node="0-12" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess queen-white" data-figurine="Q"></span> e3
+                      </span>
+                    </div>
+                    <div data-node="0-13" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-black" data-figurine="R"></span> f8
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="8">
+                    8.
+                    <div data-node="0-14" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">d3 </span>
+                    </div>
+                    <div data-node="0-15" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">g6 </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="9">
+                    9.
+                    <div data-node="0-16" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">b3 </span>
+                    </div>
+                    <div data-node="0-17" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-black" data-figurine="N"></span> d5
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="10">
+                    10.
+                    <div data-node="0-18" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess bishop-white" data-figurine="B"></span> a3
+                      </span>
+                    </div>
+                    <div data-node="0-19" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-black" data-figurine="N"></span> xe3
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="11">
+                    11.
+                    <div data-node="0-20" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">fxe3 </span>
+                    </div>
+                    <div data-node="0-21" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-black" data-figurine="R"></span> g8
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="12">
+                    12.
+                    <div data-node="0-22" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess bishop-white" data-figurine="B"></span> xe7
+                      </span>
+                    </div>
+                    <div data-node="0-23" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess queen-black" data-figurine="Q"></span> xe7
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="13">
+                    13.
+                    <div data-node="0-24" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-white" data-figurine="N"></span> xe5
+                      </span>
+                    </div>
+                    <div data-node="0-25" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess queen-black" data-figurine="Q"></span> d6
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="14">
+                    14.
+                    <div data-node="0-26" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-white" data-figurine="N"></span> xc6
+                      </span>
+                    </div>
+                    <div data-node="0-27" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">dxc6 </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="15">
+                    15.
+                    <div data-node="0-28" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess bishop-white" data-figurine="B"></span> xc6+
+                      </span>
+                    </div>
+                    <div data-node="0-29" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess queen-black" data-figurine="Q"></span> d7
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="16">
+                    16.
+                    <div data-node="0-30" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">e5 </span>
+                    </div>
+                    <div data-node="0-31" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-black" data-figurine="R"></span> a6
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="17">
+                    17.
+                    <div data-node="0-32" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">d4 </span>
+                    </div>
+                    <div data-node="0-33" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-black" data-figurine="R"></span> xc6
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="18">
+                    18.
+                    <div data-node="0-34" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">d5 </span>
+                    </div>
+                    <div data-node="0-35" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess queen-black" data-figurine="Q"></span> g4
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="19">
+                    19.
+                    <div data-node="0-36" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">dxc6 </span>
+                    </div>
+                    <div data-node="0-37" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess queen-black" data-figurine="Q"></span> xg2+
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="20">
+                    20.
+                    <div data-node="0-38" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-white" data-figurine="K"></span> xg2
+                      </span>
+                    </div>
+                    <div data-node="0-39" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-black" data-figurine="K"></span> d8
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="21">
+                    21.
+                    <div data-node="0-40" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">cxb7 </span>
+                    </div>
+                    <div data-node="0-41" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess bishop-black" data-figurine="B"></span> xb7+
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="22">
+                    22.
+                    <div data-node="0-42" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">e4 </span>
+                    </div>
+                    <div data-node="0-43" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess bishop-black" data-figurine="B"></span> a6
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="23">
+                    23.
+                    <div data-node="0-44" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-white" data-figurine="R"></span> fd1+
+                      </span>
+                    </div>
+                    <div data-node="0-45" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-black" data-figurine="K"></span> e7
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="24">
+                    24.
+                    <div data-node="0-46" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-white" data-figurine="N"></span> d5+
+                      </span>
+                    </div>
+                    <div data-node="0-47" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-black" data-figurine="K"></span> d8
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="25">
+                    25.
+                    <div data-node="0-48" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess knight-white" data-figurine="N"></span> xc7+
+                      </span>
+                    </div>
+                    <div data-node="0-49" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-black" data-figurine="K"></span> xc7
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="26">
+                    26.
+                    <div data-node="0-50" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-white" data-figurine="R"></span> d6
+                      </span>
+                    </div>
+                    <div data-node="0-51" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">h5 </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="27">
+                    27.
+                    <div data-node="0-52" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-white" data-figurine="R"></span> xa6
+                      </span>
+                    </div>
+                    <div data-node="0-53" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">h4 </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="28">
+                    28.
+                    <div data-node="0-54" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">h3 </span>
+                    </div>
+                    <div data-node="0-55" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-black" data-figurine="R"></span> d8
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="29">
+                    29.
+                    <div data-node="0-56" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-white" data-figurine="R"></span> xa5
+                      </span>
+                    </div>
+                    <div data-node="0-57" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-black" data-figurine="R"></span> d2+
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="30">
+                    30.
+                    <div data-node="0-58" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-white" data-figurine="K"></span> h1
+                      </span>
+                    </div>
+                    <div data-node="0-59" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">f6 </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="31">
+                    31.
+                    <div data-node="0-60" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-white" data-figurine="R"></span> a4
+                      </span>
+                    </div>
+                    <div data-node="0-61" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">fxe5 </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="32">
+                    32.
+                    <div data-node="0-62" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-white" data-figurine="R"></span> c4+
+                      </span>
+                    </div>
+                    <div data-node="0-63" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-black" data-figurine="K"></span> b6
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="33">
+                    33.
+                    <div data-node="0-64" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">a4 </span>
+                    </div>
+                    <div data-node="0-65" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-black" data-figurine="R"></span> xc2
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="34">
+                    34.
+                    <div data-node="0-66" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-white" data-figurine="K"></span> g1
+                      </span>
+                    </div>
+                    <div data-node="0-67" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess rook-black" data-figurine="R"></span> xc4
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row light-row" data-whole-move-number="35">
+                    35.
+                    <div data-node="0-68" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-white" data-figurine="K"></span> f1
+                      </span>
+                    </div>
+                    <div data-node="0-69" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon"
+                        ><span class="icon-font-chess king-black" data-figurine="K"></span> a5
+                      </span>
+                    </div>
+                  </div>
+                  <div class="main-line-row move-list-row dark-row" data-whole-move-number="36">
+                    36.
+                    <div data-node="0-70" class="node white-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon">bxc4 </span>
+                    </div>
+                    <div data-node="0-71" class="node black-move main-line-ply">
+                      <span class="node-highlight-content offset-for-annotation-icon selected"
+                        ><span class="icon-font-chess king-black" data-figurine="K"></span> b4
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </wc-simple-move-list>
+            </div>
+          </div>
+          <!---->
+          <div class="play-controller-quick-analysis-overflow">
+            <div class="play-controller-quick-analysis-animation play-controller-animateUp">
+              <!---->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

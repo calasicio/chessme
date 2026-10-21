@@ -1,0 +1,6 @@
+.output/
+.wxt/
+node_modules/
+public/models/
+public/ort/
+tests/fixtures/

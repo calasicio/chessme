@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <body>
+    <wc-chess-board
+      class="board flipped"
+      id="board-play-computer"
+      style="--move-animation-duration: 180ms"
+      ><svg viewBox="0 0 100 100" class="coordinates outside" aria-hidden="true">
+        <text x="2" y="3.5" font-size="3.1" class="coordinate-grey">1</text>
+        <text x="2" y="16" font-size="3.1" class="coordinate-grey">2</text>
+        <text x="2" y="28.5" font-size="3.1" class="coordinate-grey">3</text>
+        <text x="2" y="41" font-size="3.1" class="coordinate-grey">4</text>
+        <text x="2" y="53.5" font-size="3.1" class="coordinate-grey">5</text>
+        <text x="2" y="66" font-size="3.1" class="coordinate-grey">6</text>
+        <text x="2" y="78.5" font-size="3.1" class="coordinate-grey">7</text>
+        <text x="2" y="91" font-size="3.1" class="coordinate-grey">8</text>
+        <text x="10.35" y="99.25" font-size="3.1" class="coordinate-grey">h</text>
+        <text x="22.85" y="99.25" font-size="3.1" class="coordinate-grey">g</text>
+        <text x="35.35" y="99.25" font-size="3.1" class="coordinate-grey">f</text>
+        <text x="47.85" y="99.25" font-size="3.1" class="coordinate-grey">e</text>
+        <text x="60.35" y="99.25" font-size="3.1" class="coordinate-grey">d</text>
+        <text x="72.85" y="99.25" font-size="3.1" class="coordinate-grey">c</text>
+        <text x="85.35" y="99.25" font-size="3.1" class="coordinate-grey">b</text>
+        <text x="97.85" y="99.25" font-size="3.1" class="coordinate-grey">a</text></svg
+      ><!--/Coordinates-->
+      <div class="element-pool" style="" data-test-element="" data-test-type=""></div>
+      <div class="element-pool" style="" data-test-element="" data-test-type=""></div>
+      <div
+        class="highlight square-45"
+        style="background-color: rgb(255, 255, 51); opacity: 0.5"
+        data-test-element="highlight"
+        data-test-type="highlight"
+      ></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <div
+        class="highlight square-18"
+        data-test-element="highlight"
+        data-test-type="highlight"
+        style="background-color: rgb(255, 255, 51); opacity: 0.5"
+      ></div>
+      <div
+        class="highlight square-34"
+        data-test-element="highlight"
+        data-test-type="highlight"
+        style="background-color: rgb(235, 97, 80); opacity: 0.8"
+      ></div>
+      <div
+        class="highlight square-14"
+        data-test-element="highlight"
+        data-test-type="highlight"
+        style="background-color: rgb(235, 97, 80); opacity: 0.8"
+      ></div>
+      <div class="element-pool" data-test-element="" data-test-type="" style=""></div>
+      <!--/Squares--><!--/Blinking Highlights--><!--/Effects-->
+      <div class="hover-square square-16" style="visibility: hidden">
+        <svg viewBox="0 0 100 100">
+          <rect
+            x="0"
+            y="0"
+            width="100"
+            height="100"
+            stroke="rgba(255, 255, 255, 0.65)"
+            stroke-width="10"
+            fill="none"
+          ></rect>
+        </svg>
+      </div>
+      <!--/Hover Square--><!--/Effects--><!--/VFX Below-->
+      <div class="element-pool" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="piece bp square-55" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="piece wp square-12" style=""></div>
+      <div class="piece wk square-57" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="piece wr square-21" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="piece bp square-15" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="piece bk square-16" style=""></div>
+      <div class="piece bp square-26" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="piece wp square-43" style=""></div>
+      <div class="piece wq square-18" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="piece bp square-37" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="piece wp square-32" style=""></div>
+      <div class="element-pool" style=""></div>
+      <div class="piece wp square-54" style=""></div>
+      <div class="piece wp square-33" style=""></div>
+      <div class="element-pool" style=""></div>
+      <!--/Pieces--><!--/Custom Items--><!--/VFX Above--><!--/Move Hints--><!--/Capture Hints--><svg
+        viewBox="0 0 100 100"
+        class="arrows"
+      ></svg
+      ><!--/Arrows-->
+      <div class="promotion-window top" style="transform: translateX(0%); display: none">
+        <i class="close-button icon-font-chess x"></i>
+        <div class="promotion-piece wb"></div>
+        <div class="promotion-piece wn"></div>
+        <div class="promotion-piece wq"></div>
+        <div class="promotion-piece wr"></div>
+      </div>
+      <!--/Promotion Window--><!--/Fade Setup--></wc-chess-board
+    >
+  </body>
+</html>
